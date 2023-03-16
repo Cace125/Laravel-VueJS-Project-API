@@ -13,5 +13,15 @@ class VerifyCsrfToken extends Middleware
      */
     protected $except = [
         //
+        'http://localhost:5173/form',
+        'http://localhost:5173/to-dos',
+        'http://localhost:5173/login',
+        'http://localhost:5173/*',
+        'http://localhost:8000/form-api',
+        'http://localhost:8000/list-api/*',
+        'http://localhost:8000/form-user',
+        'http://localhost:8000/list-user/*',
+        'http://localhost:8000/login',
+        'http://localhost:8000/logout',
     ];
 }
